@@ -51,6 +51,7 @@
 		BE1BD4292045B69900EF9178 /* WheatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1BD42D2045B69900EF9178 /* WheatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherUITests.swift; sourceTree = "<group>"; };
 		BE1BD42F2045B69900EF9178 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4566702045BB4F00A189E7 /* Wheather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wheather.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 		BE1BD40C2045B69800EF9178 /* Wheather */ = {
 			isa = PBXGroup;
 			children = (
+				BE4566702045BB4F00A189E7 /* Wheather.entitlements */,
 				BE1BD40D2045B69800EF9178 /* AppDelegate.swift */,
 				BE1BD40F2045B69800EF9178 /* ViewController.swift */,
 				BE1BD4112045B69800EF9178 /* Main.storyboard */,
@@ -221,6 +223,11 @@
 					BE1BD4092045B69800EF9178 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					BE1BD41D2045B69900EF9178 = {
 						CreatedOnToolsVersion = 9.2;
@@ -505,6 +512,7 @@
 			baseConfigurationReference = 7B6483075D8C867CF028873A /* Pods-Wheather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wheather/Wheather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKH3GCQ85S;
 				INFOPLIST_FILE = Wheather/Info.plist;
@@ -521,6 +529,7 @@
 			baseConfigurationReference = 89C2C426106B917078F4A4EA /* Pods-Wheather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Wheather/Wheather.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VKH3GCQ85S;
 				INFOPLIST_FILE = Wheather/Info.plist;
