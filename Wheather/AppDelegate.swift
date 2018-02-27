@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterPush
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MSAppCenter.start("{64d20e68-1b35-40c1-a973-c2752d61b8ee}", withServices: [MSPush.self])
+        
         return true
     }
 
